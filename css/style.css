@@ -1,0 +1,83 @@
+html,body {
+    margin: 0;
+    padding: 0;
+
+}
+
+ol,ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 1147px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    width: 1167px;
+    height: 460px;
+    display: block;
+}
+
+.pic-list li {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    top: 0;
+    left: 0;
+}
+
+
+.pic-list li.current {
+    opacity: 1;
+}
+
+.btn-list {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-list span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    background: #999;
+    border-radius: 7px;
+    font-size: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-list span.current {
+    background:#ff6700;
+}
+
+.slide{
+    position: absolute;
+    color: #ccc;
+    background: rgba(0, 0,0.6);
+    height: 80px;
+    width: 40px;
+    top: 50%;
+    line-height: 80px;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transform: translate(0,-50%);
+    transition: all 0.3s;
+}
+
+.slide:hover {
+    opacity: 1;
+}
+
+
+.slide-right {
+    left: 1127px;
+}
